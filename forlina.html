@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Lina ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #6d071a;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+/* SECTION */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* TITLES */
+.section-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+  color: #ffd1dc;
+  text-shadow:
+    0 0 10px rgba(255,182,193,0.9),
+    0 0 25px rgba(255,105,180,0.7);
+  letter-spacing: 2px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* CHOICE TEXT */
+.choice-text {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffd1dc;
+  text-shadow:
+    0 0 10px rgba(255,182,193,0.9),
+    0 0 25px rgba(255,105,180,0.7);
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* CHOICE CONTAINER */
+.choice-container {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
+  background: rgba(109, 7, 26, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,182,193,0.5);
+}
+
+/* SILLY LINE */
+.silly {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  animation: fadeIn 2s ease;
+}
+
+/* TEXT */
+p {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  max-width: 1000px;
+  animation: fadeIn 1.5s ease;
+}
+
+/* ANSWER TEXT */
+#answer {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffd1dc;
+  text-shadow:
+    0 0 10px rgba(255,182,193,0.9),
+    0 0 25px rgba(255,105,180,0.7);
+  margin-top: 30px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease;
+}
+
+#answer.show-from-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#answer.show-from-right {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideFromRight 0.5s ease;
+}
+
+@keyframes slideFromRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 45px;
+}
+
+button {
+  padding: 16px 38px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  background: #ffb6c1;
+  color: #6d071a;
+  font-weight: bold;
+  margin: 10px;
+  box-shadow:
+    0 0 12px rgba(255,182,193,0.7),
+    0 0 30px rgba(255,182,193,0.7);
+  transition: all 0.3s ease;
+  animation: pulse 3s infinite;
+}
+
+button:hover {
+  transform: scale(1.15);
+  box-shadow:
+    0 0 20px rgba(255,182,193,1),
+    0 0 45px rgba(255,105,180,1);
+}
+
+/* ROSES */
+.rose {
+  position: fixed;
+  top: -50px;
+  font-size: 26px;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+/* ANIMATIONS */
+@keyframes fall {
+  from { transform: translateY(-60px); }
+  to { transform: translateY(110vh); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- CHOICE CONTAINER -->
+<div class="choice-container">
+  <div class="choice-text">bach tbghi n3ytlek alhmara 🙂</div>
+  <div class="buttons">
+    <button onclick="chooseName('Elena')">Elena</button>
+    <button onclick="chooseName('Lina')">Lina</button>
+  </div>
+</div>
+
+<!-- INTRODUCTORY SECTION -->
+<section>
+<div class="section-title">Mar7baaa beeeeeek  🙂❤️</div>
+<div class="silly">tki fhadi ltee7t bax tbday o 3adi wakha tki 3la ay haja maghaytkhreb walo darb 7sabati 3arfk hmara 🙂</div>
+<div class="buttons">
+<button onclick="scrollNext(this)">tki hna azen 🙂</button>
+</div>
+</section>
+
+<!-- SECTION 1 -->
+<section>
+<div class="section-title">Awl nhar dweeena feehh 💬</div>
+<div class="silly">hadxi bseeh 🙂</div>
+<p>
+X7aal o7na kantfar9o ondaaabzooo odaaz mn a7sen l a3wam fhyati 3rfti 3laax?!
+Hit mn nhar dkhelti lhyati oana deema dee7ka mrsoma 3la weejhi
+o men nhar xeft 3inik oana taay7 feek
+wntii heya akter insana bgheetha ❤️❤️
+</p>
+<div class="buttons">
+<button onclick="scrollNext(this)">eyeeh</button>
+</div>
+</section>
+
+<!-- SECTION 2 -->
+<section>
+<div class="section-title">mn nhar bdat lhdra benatna 💕</div>
+<div class="silly">kat39li?</div>
+<p>T39li 3la awl mra dwena feha?</p>
+<div class="buttons">
+<button onclick="showAyeeh()">Ayeeh</button>
+<button onclick="showLae77()">Lae77</button>
+</div>
+<p id="answer" style="margin-top:30px;"></p>
+<div class="buttons">
+<button onclick="scrollBack(this)">rj3i lor</button>
+<button onclick="scrollNext(this)">mnb3d</button>
+</div>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+<div class="section-title">Ramdan dyalna 🌙</div>
+<div class="silly">eeeeh ya lyam bhala yalah lbarh</div>
+<p>
+t39li 3la rmdan???? waaaaaa
+a7seen rmdaan fhyaatii
+ohowa lfetraa feen bsee77 bdeet kanbgheeeek wakha mn nhar 3rftk oana kanbghek walakin rmdan bdet kangol ghankmlo bjoj 
+daaz ahseen rmdan bsbabk nti a Lina 🙂🌸
+</p>
+<div class="buttons">
+<button onclick="scrollBack(this)">rj3i lor</button>
+<button onclick="scrollNext(this)">ahah</button>
+</div>
+</section>
+
+<!-- SECTION 4 -->
+<section>
+<div class="section-title">chi wa9t kayfout…</div>
+<div class="silly">daba hadi khasha chi bosa 😌</div>
+<p>
+nti hiya ahsen haja trat fhyaati
+kantmna hadxi ikon bedaya machi akher 3am lena 🌹
+</p>
+<div class="buttons">
+<button onclick="scrollBack(this)">rj3i lor</button>
+<button onclick="scrollNext(this)">tki hna alhmara</button>
+</div>
+</section>
+
+<!-- FINAL -->
+<section>
+<div class="section-title">hadi hdra maxi gha kharja mn l9elb mn ter... 🙂❤️</div>
+<div class="silly">hadi akher w7da… 😭</div>
+<p>
+had l3am li 3rftk fih ma kanch 3adi… had l3am bddl li 7yati kamla. 9bl ma n3rfk, kont kan3ich w safi, 3omri ma 3rft ma3na dyal chi 7aja bsa7. walakin mlli dkhlt l9albi, kolchi tbdl. 3rft wa7d lbeent… w machi ay beent, beent 9riba l9albi kter mn ay 7aja f had dnya kamla, lbeent li bghitha w bghatni, w li 7ta ila tdzabna w tfr9na, w dazo binatna dak tkhrbi9 dyal l3ezza w nafss, 3omrna ma sm7na f b3diyatna mn l9alb.
+
+had l3am 3rft bli lfr7ti wlat hiya nti, w kantmna mn 9albi nkon ana wyaak dima 9rab lb3diyatna, nkono bjooj dima, yed f yed w 9alb f 9alb. w kansol lah ma tkoun la distance la zman la ay 7aja tba3dna 3la b3diyatna. 3omri ma chft lmasafa mochkil, walakin chft 7aja wa7da li katkhrb kolchi: l ego. had l ego kayfrr9 bzaf, walakin n3l bo dinmo, 7it ana kan3rf bli kanbghik 7ob bla 7doud.
+
+3omri ma ntkbr 3lik, katb9ay dima 7bibti, machi chi wa7da okhra. w wakha n3ya nhdr, 3omri ma n9dr nwssf lik ch7al kanbghik w ch7al kan7ma9 3lik. ghir d7ktk, ghir nchofha f video, kanw9f w nsowl rassi: ach had zzin li 3ndi? wach hadi malaak wla bnadm? kol mara nchof btisamatk kan7ss brassi kandob f blastii, 7it nti aghla 7aja 3ndi f had l7yat.
+
+n9dr n3tik 3iniya, n3tik ay 7aja 3ndi, ma n9drch n3tik ghir 7aja wa7da: tkon m3a chi wa7d akhor. kanwa3dk mn 9albi bli 3omri ma nkhllik, mahma w9e3, mahma tza7mat dnya 3lina. w wakha had l7ob kaml, rah mazal ma wrritk walo… rah wakha ban lik ch7al, 3omro ma yban lik ch7al kanbghik bsa7.
+
+w kan9ol: ya rbi khlliha lia، ya rbi sahl 3lina، ya rbi jma3na bjooj w khllina dima m3a b3diyatna. 7it ana kanbghik… kanbghik… kanbghik 7ob ma kayt9alch، 7ob kaykhrj mn l9alb w kaymchi 7ta l aakhir nafass ❤️
+</p>
+<div class="buttons">
+<button onclick="scrollBack(this)">rj3i lor</button>
+</div>
+</section>
+
+<script>
+function scrollNext(btn) {
+  const next = btn.closest("section").nextElementSibling;
+  if (next) window.scrollTo({ top: next.offsetTop, behavior: "smooth" });
+}
+
+function scrollBack(btn) {
+  const prev = btn.closest("section").previousElementSibling;
+  if (prev) window.scrollTo({ top: prev.offsetTop, behavior: "smooth" });
+}
+
+function showAyeeh() {
+  const answer = document.getElementById("answer");
+  answer.innerText = "Is7abni atgoli la hhhhhhh, ma3lena mazal 3aa9l siftili wahd tswira dyalk mn deek nhar ontii m7eem9aaniiii 😍";
+  answer.className = "show-from-left";
+}
+
+function showLae77() {
+  const answer = document.getElementById("answer");
+  answer.innerText = "keeeelbaaa 🙂";
+  answer.className = "show-from-right";
+}
+
+function chooseName(name) {
+  if (name === 'Elena') {
+    document.body.innerHTML = document.body.innerHTML.replace(/Lina/g, 'Elena');
+  }
+  // Remove the choice container after selection
+  const container = document.querySelector('.choice-container');
+  if (container) container.remove();
+}
+
+/* Falling roses */
+const roses = ["🌹","🌸","🥀"];
+setInterval(() => {
+  const r = document.createElement("div");
+  r.className = "rose";
+  r.innerText = roses[Math.floor(Math.random()*roses.length)];
+  r.style.left = Math.random()*100 + "vw";
+  r.style.animationDuration = (6 + Math.random()*6) + "s";
+  document.body.appendChild(r);
+  setTimeout(() => r.remove(), 12000);
+}, 350);
+</script>
+
+</body>
+</html>
